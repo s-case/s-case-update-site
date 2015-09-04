@@ -5,8 +5,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <parent>
     <groupId>eu.scasefp7.eclipse</groupId>
-    <artifactId>s-case-core</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <artifactId>s-case-update-site</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>s-case-dev-update-site</artifactId>
@@ -34,7 +34,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
-    <!-- Dependencies -->
+    <!-- Core Dependencies -->
     <dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
@@ -55,6 +55,33 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
+    <!-- WS Composition Dependencies -->
+<!--     <dependency> -->
+<!--   		<groupId>eu.scasefp7.eclipse</groupId> -->
+<!--   		<artifactId>eu.scasefp7.eclipse.serviceComposition.dependencies.feature</artifactId> -->
+<!--   		<version>1.0.0-SNAPSHOT</version> -->
+<!--   		<type>eclipse-feature</type> -->
+<!--   	</dependency>     -->
+<!--   	<dependency> -->
+<!--   		<groupId>eu.scasefp7.eclipse</groupId> -->
+<!--   		<artifactId>eu.scasefp7.eclipse.serviceComposition.dependencies.feature</artifactId> -->
+<!--   		<version>1.0.0-SNAPSHOT</version> -->
+<!--         <classifier>p2metadata</classifier> -->
+<!--         <type>xml</type> -->
+<!--     </dependency> -->
+<!--     <dependency> -->
+<!--   		<groupId>eu.scasefp7.eclipse</groupId> -->
+<!--   		<artifactId>eu.scasefp7.eclipse.serviceComposition.dependencies.feature</artifactId> -->
+<!--   		<version>1.0.0-SNAPSHOT</version> -->
+<!--         <classifier>p2artifacts</classifier> -->
+<!--         <type>xml</type> -->
+<!--     </dependency> -->
+    <!-- P2 bridge -->
+<!--     <dependency> -->
+<!--     	<groupId>eu.scasefp7.eclipse</groupId> -->
+<!--     	<artifactId>dev-p2-dependencies</artifactId> -->
+<!--     	<version>1.0.0-SNAPSHOT</version> -->
+<!--     </dependency> -->
   </dependencies>
 	<build>
 		<plugins>

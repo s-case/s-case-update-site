@@ -12,8 +12,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <artifactId>common-update-site</artifactId>
   <packaging>eclipse-repository</packaging>
 
-  <!-- Core -->
   <dependencies>
+    <!-- Core -->
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
