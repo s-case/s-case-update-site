@@ -9,7 +9,7 @@
 
 	<modules>
 <!--   		<module>dev-p2-dependencies</module> -->
-<!--  		<module>update-site</module> -->
+ 		<module>update-site</module>
 		<module>s-case-dev-update-site</module>
 	</modules>
 
