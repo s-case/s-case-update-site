@@ -33,10 +33,16 @@
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</repository>
- 		<repository>
-			<id>p2-dependency-bridge</id>
-			<layout>p2</layout>
-			<url>file:///${project.basedir}/../dev-p2-dependencies/target/repository</url>
+		<!-- Activate this when updating dev-update-site -->
+<!--  		<repository> -->
+<!-- 			<id>p2-dependency-bridge</id> -->
+<!-- 			<layout>p2</layout> -->
+<!-- 			<url>file:///${project.basedir}/../dev-p2-dependencies/target/repository</url> -->
+<!-- 		</repository> -->
+		<repository>
+   			<id>s-case-dev</id>
+		   	<layout>p2</layout>
+   			<url>http://s-case.github.io/s-case_dev_site/</url>
 		</repository>
 	</repositories>
 
