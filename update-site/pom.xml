@@ -123,7 +123,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <type>xml</type>
     </dependency>
 
-	<!-- UML recognizer -->
+	<!-- MDE -->
     <dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
     	<artifactId>eu.scasefp7.eclipse.mde.feature</artifactId>
