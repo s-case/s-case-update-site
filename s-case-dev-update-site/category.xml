@@ -15,6 +15,9 @@
    <bundle id="eu.scasefp7.scase-wsparser-osgi" version="1.0.0.20150909140529">
       <category name="all"/>
    </bundle>
+   <bundle id="org.yaml.snakeyaml" version="1.16.0">
+      <category name="all"/>
+   </bundle>
    <category-def name="eu.scasefp7.scase.eclipse" label="S-CASE">
       <description>
          S-CASE developer tools

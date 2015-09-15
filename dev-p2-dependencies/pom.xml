@@ -66,6 +66,9 @@
 								<artifact>
 									<id>eu.scasefp7:scase-wsparser-osgi:1.0.0-SNAPSHOT</id>
 								</artifact>
+								<artifact>
+									<id>org.yaml:snakeyaml:1.16</id>
+								</artifact>
 <!-- 								<artifact> -->
 <!-- 									<id>eu.scasefp7.eclipse:eu.scasefp7.eclipse.core:1.0.2-SNAPSHOT</id> -->
 <!-- 								</artifact> -->
