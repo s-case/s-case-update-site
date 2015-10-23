@@ -31,14 +31,16 @@ TMPDIR=target/$(basename $0).$$
 
 mkdir -p $TMPDIR
 
+#trap 'rm -rf $TMPDIR' 2 15
+
 cd $TMPDIR
 
 git clone git@github.com:s-case/s-case.github.io.git s-case.github.io.git
 
 cd s-case.github.io.git
 
-# to prevent unecessary update, run a checksum test first
-FILES=`find $TMPDIR/s-case.github.io.git/s-case_update_site/ -type f -print`
+# to prevent unnecessary update, run a checksum test first
+FILES=`find $SITE_DIR -type f -print`
 CHECKSUM_TARGET=`sha512sum -b $FILES | cut -d\  -f1 | sha512sum | cut -d\  -f1`
 
 exit
