@@ -10,7 +10,7 @@ VERSION=`mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate \
     grep -v Download | \
     sed -n -e '/^[0-9]/ { p }'`
 
-if [ "X$?" != "X0" ] ; then
+if [ "X$VERSION" != "X" ] ; then
     echo "Can't get current version";
     exit -1
 fi
