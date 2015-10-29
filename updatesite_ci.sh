@@ -39,10 +39,10 @@ git clone git@github.com:s-case/s-case.github.io.git s-case.github.io.git
 
 cd s-case.github.io.git
 
-# to prevent unnecessary update, run a checksum test first
-FILES=`find $SITE_DIR -type f -print`
-CHECKSUM_TARGET=`sha512sum -b $FILES | cut -d\  -f1 | sha512sum | cut -d\  -f1`
+# checksum doesn't work, because the generated content.jar and
+# artifacts.jar are different each time
 
+#see http://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github
 exit
 
 

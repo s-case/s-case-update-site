@@ -17,20 +17,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
   		<type>eclipse-feature</type>
   	</dependency>    
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2metadata</classifier>
         <type>xml</type>
     </dependency>
     <dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
@@ -39,20 +39,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
     	<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-    	<version>1.0.2-SNAPSHOT</version>
-  		<type>eclipse-feature</type>
+        <version>${eu.scasefp7.eclipse.core.version}</version>
     </dependency>
     <dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
     	<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-    	<version>1.0.2-SNAPSHOT</version>
+        <version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2metadata</classifier>
         <type>xml</type>
     </dependency>
     <dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
     	<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-    	<version>1.0.2-SNAPSHOT</version>
+        <version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
@@ -78,6 +77,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.reqeditor</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
 
 	<!-- Storyboards -->
     <dependency>
@@ -99,6 +103,31 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     	<version>1.0.0-SNAPSHOT</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.storyboards</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.storyboards.diagram</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.storyboards.edit</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.storyboards.tests</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.storyboards.editor</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
     </dependency>
 
 	<!-- UML recognizer -->
@@ -122,6 +151,31 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec.ui</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec.linux.x64</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec.win32.x64</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec.win32.x86</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
 
 	<!-- MDE -->
     <dependency>
@@ -144,7 +198,26 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
-
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.mde.cimgen</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.mde.m2m</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.mde.m2t</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.mde.ui</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
+    </dependency>
 	<!--  Web service composition -->
 	<dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
@@ -165,6 +238,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     	<version>1.0.0-SNAPSHOT</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
+    </dependency>
+    <dependency>
+    	<groupId>eu.scasefp7.eclipse</groupId>
+    	<artifactId>eu.scasefp7.eclipse.servicecomposition</artifactId>
+    	<version>1.0.0-SNAPSHOT</version>
     </dependency>
 	<!--  Web service composition dependencies -->
 	<dependency>

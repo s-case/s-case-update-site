@@ -1,128 +1,130 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.scasefp7.eclipse</groupId>
-	<artifactId>s-case-update-site</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>eu.scasefp7.eclipse</groupId>
+    <artifactId>s-case-update-site</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-	<modules>
-<!--   		<module>dev-p2-dependencies</module> -->
- 		<module>update-site</module>
-		<module>s-case-dev-update-site</module>
-	</modules>
+    <modules>
+<!--           <module>dev-p2-dependencies</module> -->
+         <module>update-site</module>
+        <module>s-case-dev-update-site</module>
+    </modules>
 
-	<parent>
-		<groupId>eu.scasefp7</groupId>
-		<artifactId>scase-parent</artifactId>
-		<version>1.0.19</version>
-	</parent>
+    <parent>
+        <groupId>eu.scasefp7</groupId>
+        <artifactId>scase-parent</artifactId>
+        <version>1.0.19</version>
+    </parent>
 
-	<repositories>
-		<repository>
-			<id>luna</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/luna</url>
-		</repository>
-		<repository>
-			<id>OSSRH snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-		<!-- Activate this when updating dev-update-site -->
-<!--  		<repository> -->
-<!-- 			<id>p2-dependency-bridge</id> -->
-<!-- 			<layout>p2</layout> -->
-<!-- 			<url>file:///${project.basedir}/../dev-p2-dependencies/target/repository</url> -->
-<!-- 		</repository> -->
-		<repository>
-   			<id>s-case-dev</id>
-		   	<layout>p2</layout>
-   			<url>http://s-case.github.io/s-case_dev_site/</url>
-		</repository>
-	</repositories>
+    <repositories>
+        <repository>
+            <id>luna</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/luna</url>
+        </repository>
+        <repository>
+            <id>OSSRH snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <!-- Activate this when updating dev-update-site -->
+<!--          <repository> -->
+<!--             <id>p2-dependency-bridge</id> -->
+<!--             <layout>p2</layout> -->
+<!--             <url>file:///${project.basedir}/../dev-p2-dependencies/target/repository</url> -->
+<!--         </repository> -->
+        <repository>
+               <id>s-case-dev</id>
+               <layout>p2</layout>
+               <url>http://s-case.github.io/s-case_dev_site/</url>
+        </repository>
+    </repositories>
 
-	<developers>
-		<developer>
-			<name>Themistoklis Diamantopoulos</name>
-			<email>thdiaman@issel.ee.auth.gr</email>
-			<organization>Aristotle University of Thessaloniki</organization>
-			<organizationUrl>http://www.auth.gr/en</organizationUrl>
-		</developer>
-		<developer>
-			<name>Marin Orlic</name>
-			<email>marin.orlic@ericsson.com</email>
-			<organization>Ericsson Nikola Tesla d.d.</organization>
-			<organizationUrl>http://www.ericsson.hr/</organizationUrl>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <name>Themistoklis Diamantopoulos</name>
+            <email>thdiaman@issel.ee.auth.gr</email>
+            <organization>Aristotle University of Thessaloniki</organization>
+            <organizationUrl>http://www.auth.gr/en</organizationUrl>
+        </developer>
+        <developer>
+            <name>Marin Orlic</name>
+            <email>marin.orlic@ericsson.com</email>
+            <organization>Ericsson Nikola Tesla d.d.</organization>
+            <organizationUrl>http://www.ericsson.hr/</organizationUrl>
+        </developer>
+    </developers>
 
-	<scm>
-		<connection>scm:git:git@github.com:s-case/s-case-update-site.git</connection>
-		<developerConnection>scm:git:git@github.com:s-case/s-case-update-site.git</developerConnection>
-		<url>https://github.com/s-case/s-case-update-site.git</url>
-		<tag>HEAD</tag>
-	</scm>
+    <scm>
+        <connection>scm:git:git@github.com:s-case/s-case-update-site.git</connection>
+        <developerConnection>scm:git:git@github.com:s-case/s-case-update-site.git</developerConnection>
+        <url>https://github.com/s-case/s-case-update-site.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
-	<properties>
-		<tycho.version>0.23.0</tycho.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+    <properties>
+        <tycho.version>0.23.0</tycho.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <eu.scasefp7.eclipse.core.version>1.1.1-SNAPSHOT</eu.scasefp7.eclipse.core.version>
+    </properties>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-p2-repository-plugin</artifactId>
-				<version>${tycho.version}</version>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<extensions>true</extensions>
-			</plugin>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-p2-repository-plugin</artifactId>
+                <version>${tycho.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+            </plugin>
 
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<environments>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <version>${tycho.version}</version>
+                <configuration>
+                    <pomDependencies>consider</pomDependencies>
+                    <environments>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
 
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 
 </project>

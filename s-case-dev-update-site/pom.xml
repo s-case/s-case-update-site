@@ -17,20 +17,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
   		<type>eclipse-feature</type>
   	</dependency>    
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2metadata</classifier>
         <type>xml</type>
     </dependency>
     <dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
@@ -38,20 +38,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
   		<type>eclipse-feature</type>
   	</dependency>    
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2metadata</classifier>
         <type>xml</type>
     </dependency>
     <dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.dependencies.feature</artifactId>
-  		<version>1.0.2-SNAPSHOT</version>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
