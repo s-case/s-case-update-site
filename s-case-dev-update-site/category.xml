@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/eu.scasefp7.eclipse.core.feature_1.1.1.qualifier.jar" id="eu.scasefp7.eclipse.core.feature" version="1.1.1.qualifier">
+      <category name="eu.scasefp7.scase.eclipse"/>
+   </feature>
+   <feature url="features/eu.scasefp7.eclipse.core.dependencies.feature_1.1.1.qualifier.jar" id="eu.scasefp7.eclipse.core.dependencies.feature" version="1.1.1.qualifier">
+      <category name="eu.scasefp7.scase.eclipse"/>
+   </feature>
+   <bundle id="org.apache.servicemix.bundles.jung-graph-impl" version="2.0.1.2">
+      <category name="all"/>
+   </bundle>
+   <bundle id="com.googlecode.json-simple" version="1.1.1">
+      <category name="all"/>
+   </bundle>
+   <bundle id="eu.scasefp7.scase-wsparser-osgi" version="1.0.0.20150909140529">
+      <category name="all"/>
+   </bundle>
+   <bundle id="org.yaml.snakeyaml" version="1.16.0">
+      <category name="all"/>
+   </bundle>
+   <bundle id="jcl.over.slf4j" version="1.7.6">
+      <category name="all"/>
+   </bundle>
+   <bundle id="slf4j.log4j12" version="1.7.6">
+      <category name="all"/>
+   </bundle>
+   <bundle id="net.sf.jung.api" version="2.0.1">
+      <category name="all"/>
+   </bundle>
+   <bundle id="net.sourceforge.collections.generic" version="4.1.0">
+      <category name="all"/>
+   </bundle>
+   <bundle id="org.hamcrest.core" version="1.1.0">
+      <category name="all"/>
+   </bundle>
+   <bundle id="slf4j.api" version="1.7.6">
+      <category name="all"/>
+   </bundle>
+   <category-def name="eu.scasefp7.scase.eclipse" label="S-CASE">
+      <description>
+         S-CASE developer tools
+      </description>
+   </category-def>
+   <category-def name="all" label="Maven osgi-bundles"/>
+</site>
