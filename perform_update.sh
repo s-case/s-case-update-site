@@ -41,7 +41,7 @@ mkdir -p $TMPDIR
 cd $TMPDIR
 
 echo check out existing update site
-git clone git@github.com:s-case/s-case.github.io.git s-case.github.io.git
+git clone https://scaseAtsDeveloper:scaseAtsDeveloper,01@github.com/s-case/s-case.github.io.git s-case.github.io.git
 
 echo update existing update site
 cd s-case.github.io.git
