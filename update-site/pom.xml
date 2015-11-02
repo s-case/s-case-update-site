@@ -14,11 +14,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <dependencies>
     <!-- Core -->
-    <!-- 
-      core doesn't work from scratch, because the generated features
-      contains a link to core with the eclipse version number and this
-      number could not be fund by mvn 
-    -->
   	<dependency>
   		<groupId>eu.scasefp7.eclipse</groupId>
   		<artifactId>eu.scasefp7.eclipse.core.feature</artifactId>

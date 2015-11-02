@@ -74,6 +74,7 @@ echo "      <code>http://s-case.github.io/s-case_update_site/</code>" >> index.h
 echo "      <br />in your eclipse repositories." >> index.html
 echo "  </p></div></body>" >> index.html
 echo "</html>" >> index.html
+<<<<<<< HEAD
 git add -A
 git commit -am "automatic update"
 
