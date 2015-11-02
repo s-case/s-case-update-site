@@ -39,11 +39,19 @@ trap 'rm -rf $TMPDIR' 0 2 15
 
 cd $TMPDIR
 
+$OPENSHIFT_DATA_DIR/settings.xml
+
+if [ "XOPENSHIFT_DATA_DIR" = "X" ] ; then
+    SETTINGS_XML=$HOME/.m2/settings.xml
+else
+    SETTINGS_XML=$OPENSHIFT_DATA_DIR/settings.xml
+fi
+
 echo everything locally
 #for i in s-case-core.git storyboard-creator.git requirements-editor.git uml-extraction.git web-service-composition.git mde.git; do
 for i in s-case-core.git ; do
    git clone https://github.com/s-case/$i $i
-   (cd $i && mvn clean install)
+   (cd $i && mvn -s $SETTINGS_XML clean install)
 done
 
 cd $DIR
