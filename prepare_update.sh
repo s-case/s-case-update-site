@@ -42,14 +42,16 @@ cd $TMPDIR
 
 if [ "XOPENSHIFT_DATA_DIR" = "X" ] ; then
     SETTINGS_XML=$HOME/.m2/settings.xml
+    MVN=mvn
 else
     SETTINGS_XML=$OPENSHIFT_DATA_DIR/settings.xml
+    MVN=$OPENSHIFT_DATA_DIR/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.3.3/bin/mvn
 fi
 
 echo everything locally
 #for i in s-case-core.git storyboard-creator.git requirements-editor.git uml-extraction.git web-service-composition.git mde.git; do
 for i in s-case-core.git ; do
    git clone https://scaseAtsDeveloper:scaseAtsDeveloper,01@github.com/s-case/$i $i
-   (cd $i && mvn -s $SETTINGS_XML clean install)
+   (cd $i && $MVN -s $SETTINGS_XML clean install)
 done
 
