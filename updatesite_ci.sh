@@ -42,7 +42,7 @@ cd $TMPDIR
 echo everything locally
 #for i in s-case-core.git storyboard-creator.git requirements-editor.git uml-extraction.git web-service-composition.git mde.git; do
 for i in s-case-core.git ; do
-   git clone git@github.com:s-case/$i $i
+   git clone https://github.com/s-case/
    (cd $i && mvn clean install)
 done
 
