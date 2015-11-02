@@ -31,7 +31,7 @@ fi
 
 DIR=`pwd`
 
-TMPDIR=target/$(basename $0).$$
+TMPDIR=$DIR/target/$(basename $0).$$
 
 mkdir -p $TMPDIR
 
@@ -39,29 +39,39 @@ trap 'rm -rf $TMPDIR' 0 2 15
 
 cd $TMPDIR
 
-echo building core locally
-git clone git@github.com:s-case/s-case-core.git s-case-core.git
-cd  s-case-core.git && mvn clean install
+echo everything locally
+#for i in s-case-core.git storyboard-creator.git requirements-editor.git uml-extraction.git web-service-composition.git mde.git; do
+for i in s-case-core.git ; do
+   git clone git@github.com:s-case/$i $i
+   (cd $i && mvn clean install)
+done
 
 cd $DIR
 mvn clean install
 
+if [ "X$?" != "X0" ] ; then
+    exit 1
+fi
+
+# deleted up after mvn clean
+mkdir -p $TMPDIR
 cd $TMPDIR
 
 echo check out existing update site
 git clone git@github.com:s-case/s-case.github.io.git s-case.github.io.git
 
+echo update existing update site
 cd s-case.github.io.git
 
 if [ ! -d $SITE_DIR ] ; then
-    mkdir -p $SITE_DIR
+    mkdir $SITE_DIR
 fi
 
-cd $SITE_DIR
+git rm -q -r $SITE_DIR/*
 
-echo update existing update site
-git rm -r *
-cp -a $DIR/update-site/target/repository/* .
+mkdir $SITE_DIR
+
+cp -a $DIR/update-site/target/repository/* $SITE_DIR
 # Add an index.html file to explain this is an update site
 echo "<!DOCTYPE html>" > index.html
 echo "<!-- Warning: this file is auto-generated! Any changes are deleted upon each update site commit! -->" >> index.html
@@ -74,7 +84,6 @@ echo "      <code>http://s-case.github.io/s-case_update_site/</code>" >> index.h
 echo "      <br />in your eclipse repositories." >> index.html
 echo "  </p></div></body>" >> index.html
 echo "</html>" >> index.html
-<<<<<<< HEAD
 git add -A
 git commit -am "automatic update"
 
