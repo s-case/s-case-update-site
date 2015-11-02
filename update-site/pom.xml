@@ -39,6 +39,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <classifier>p2artifacts</classifier>
         <type>xml</type>
     </dependency>
+    <dependency>
+  		<groupId>eu.scasefp7.eclipse</groupId>
+  		<artifactId>eu.scasefp7.eclipse.core</artifactId>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
+    </dependency>
+    <dependency>
+  		<groupId>eu.scasefp7.eclipse</groupId>
+  		<artifactId>eu.scasefp7.eclipse.core.ui</artifactId>
+  		<version>${eu.scasefp7.eclipse.core.version}</version>
+    </dependency>
 
 	<!--  Core dependencies -->
 	<dependency>
