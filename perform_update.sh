@@ -72,12 +72,12 @@ git commit -am "automatic update"
 
 #drop the history
 #see http://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github
-echo drop history
-git checkout --orphan latest_branch
-git add -A
-git commit -am "drop history"
-git branch -D master
-git branch -m master
-git push -f origin master
+#echo drop history
+#git checkout --orphan latest_branch
+#git add -A
+#git commit -am "drop history"
+#git branch -D master
+#git branch -m master
+#git push -f origin master
 
 exit
