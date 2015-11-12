@@ -40,7 +40,7 @@ trap 'rm -rf $TMPDIR' 0 2 15
 
 cd $TMPDIR
 
-if [ "XOPENSHIFT_DATA_DIR" = "X" ] ; then
+if [ "X$OPENSHIFT_DATA_DIR" = "X" ] ; then
     SETTINGS_XML=$HOME/.m2/settings.xml
     MVN=mvn
 else
