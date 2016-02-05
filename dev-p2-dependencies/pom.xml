@@ -49,6 +49,10 @@
                                 <!-- specify your dependencies here -->
                                 <!-- groupId:artifactId:version -->
                                 <artifact>
+									<id>net.sf.jung:jung-io:2.0.1</id>
+								</artifact>
+                                
+                                <artifact>
 									<id>org.apache.jena:jena-osgi:2.13.0</id>
 								</artifact>
 <!-- 								<artifact> -->
