@@ -57,6 +57,9 @@
 								<artifact>
 									<id>org.apache.servicemix.bundles:org.apache.servicemix.bundles.jung-graph-impl:2.0.1_2</id>
 								</artifact>
+                <artifact>
+									<id>net.sf.jung:jung-io:2.0.1</id>
+								</artifact>
 <!-- 								<artifact> -->
 <!-- 									<id>org.apache.servicemix.bundles:org.apache.servicemix.bundles.jsch:0.1.51_1</id> -->
 <!-- 								</artifact> -->
