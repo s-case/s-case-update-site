@@ -73,12 +73,14 @@
                 
                 
                 <artifact>
-									<id>com.sun.jersey.contribs:jersey-multipart:1.18.1</id>
+									<id>com.sun.jersey.contribs:jersey-multipart:1.19</id>
 								</artifact>
                 <artifact>
-									<id>com.sun.jersey:jersey-client:1.18.1</id>
+									<id>com.sun.jersey:jersey-client:1.19</id>
 								</artifact>
-                
+                <artifact>
+									<id>com.sun.jersey:jersey-core:1.19</id>
+								</artifact>
 								<artifact>
 									<id>eu.scasefp7:scase-wsparser-osgi:1.0.0-SNAPSHOT</id>
 								</artifact>
