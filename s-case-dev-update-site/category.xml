@@ -12,7 +12,7 @@
    <bundle id="com.googlecode.json-simple" version="1.1.1">
       <category name="all"/>
    </bundle>
-   <bundle id="eu.scasefp7.scase-wsparser-osgi" version="1.0.0.20160306181042">
+   <bundle id="eu.scasefp7.scase-wsparser-osgi" version="1.0.0.20160308112251">
       <category name="all"/>
    </bundle>
    <bundle id="org.yaml.snakeyaml" version="1.16.0">
