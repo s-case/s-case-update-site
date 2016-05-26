@@ -55,9 +55,12 @@
                                 <artifact>
 									<id>org.apache.jena:jena-osgi:2.13.0</id>
 								</artifact>
-<!-- 								<artifact> -->
-<!-- 									<id>org.apache.servicemix.bundles:org.apache.servicemix.bundles.jung-api:2.0.1_2</id> -->
-<!-- 								</artifact> -->
+								<artifact>
+									<id>org.glassfish.jersey.core:jersey-client:2.22.2</id>
+								</artifact>
+                <artifact> -->
+									<id>org.glassfish.jersey.media:jersey-media-multipart:2.22.2</id>
+								</artifact>
 								<artifact>
 									<id>org.apache.servicemix.bundles:org.apache.servicemix.bundles.jung-graph-impl:2.0.1_2</id>
 								</artifact>
