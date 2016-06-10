@@ -79,6 +79,9 @@
 								<artifact>
 									<id>org.yaml:snakeyaml:1.16</id>
 								</artifact>
+								<artifact>
+									<id>com.auth0:java-jwt:2.1.0</id>
+								</artifact>
 <!-- 								<artifact> -->
 <!-- 									<id>eu.scasefp7.eclipse:eu.scasefp7.eclipse.core:1.0.2-SNAPSHOT</id> -->
 <!-- 								</artifact> -->
