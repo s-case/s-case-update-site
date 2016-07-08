@@ -173,17 +173,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </dependency>
     <dependency>
     	<groupId>eu.scasefp7.eclipse</groupId>
-    	<artifactId>eu.scasefp7.eclipse.umlrec.linux.x64</artifactId>
-    	<version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-    	<groupId>eu.scasefp7.eclipse</groupId>
-    	<artifactId>eu.scasefp7.eclipse.umlrec.win32.x64</artifactId>
-    	<version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-    	<groupId>eu.scasefp7.eclipse</groupId>
-    	<artifactId>eu.scasefp7.eclipse.umlrec.win32.x86</artifactId>
+    	<artifactId>eu.scasefp7.eclipse.umlrec.papyrus</artifactId>
     	<version>1.0.0-SNAPSHOT</version>
     </dependency>
 
