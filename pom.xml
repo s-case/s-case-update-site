@@ -10,7 +10,8 @@
     <modules>
 <!--           <module>dev-p2-dependencies</module> -->
          <module>update-site</module>
-        <module>s-case-dev-update-site</module>
+<!-- not used, a separate update site is added for third-party deps -->
+<!--        <module>s-case-dev-update-site</module> -->
     </modules>
 
     <parent>
