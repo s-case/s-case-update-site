@@ -6,6 +6,8 @@
 # in the same level as the s-case.github.io repository in your file system
 # e.g. /home/user/git/s-case-update-site and /home/user/git/s-case.github.io
 
+env
+
 echo check version
 #VERSION=`mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate \
 #    -Dexpression=project.version | \
