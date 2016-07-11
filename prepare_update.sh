@@ -45,7 +45,7 @@ if [ "X$OPENSHIFT_DATA_DIR" = "X" ] ; then
     MVN=mvn
 else
     SETTINGS_XML=$OPENSHIFT_DATA_DIR/settings.xml
-    MVN=$OPENSHIFT_DATA_DIR/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.3.3/bin/mvn
+    MVN=$OPENSHIFT_DATA_DIR/jenkins/tools/hudson.tasks.Maven_MavenInstallation/apache-maven-3.3.3/bin/mvn
 fi
 
 echo everything locally
